@@ -16,7 +16,7 @@ public class Bank_IO extends Application {
 
 	@Override
 	public void start(Stage primaryStage) {
-		primaryStage.setTitle("De uduelige's bank");
+		primaryStage.setTitle("De uduelige's bank er gay");
 
 		primaryStage.show();
 
