@@ -8,8 +8,7 @@ import java.sql.SQLException;
 
 public class login {
 	static void main(String[] args) throws SQLException {
-		Connection connection =
-		DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/mydb", "SA", "");
+		Connection connection = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/mydb", "SA", "");
 		PreparedStatement statement = connection.prepareStatement("SELECT users");
 		ResultSet resultset = statement.executeQuery();
 		while (resultset.next()) {
