@@ -1,4 +1,4 @@
-package application;
+package javafx;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -29,7 +29,7 @@ public class Bank_IO extends Application {
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
 
-        Text scenetitle = new Text("Welcome");
+        Text scenetitle = new Text("De udueliges bank");
         scenetitle.setId("welcome-text");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(scenetitle, 0, 0, 2, 1);
@@ -69,8 +69,8 @@ public class Bank_IO extends Application {
 
         Scene scene = new Scene(grid, 300, 275);
         primaryStage.setScene(scene);
-        scene.getStylesheets().add
-        (Main.class.getResource("Main.css").toExternalForm());
+        
+        
         primaryStage.show();
     }
 
